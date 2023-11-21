@@ -49,10 +49,10 @@ namespace EjercicioLista2
                         break;
                     case 2:
                         mL.darAltaCuenta(listaCuenta);
-                        foreach (CuentaDto cuenta in listaCuenta) 
+                        /*foreach (CuentaDto cuenta in listaCuenta) 
                         {
                            Console.WriteLine(cuenta.ToString());
-                        }
+                        }*/
                         break;
                     default:
                         Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna.");

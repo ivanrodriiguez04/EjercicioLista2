@@ -43,7 +43,7 @@ namespace EjercicioLista2.Dtos
         public string ToString() 
         {
             string cuentaString ="Dni del cliente:"+this.dniCliente+"\n"+ "Id de la cuenta: " + this.idCuenta + "\n" +
-            "IBAN" + this.iban + "\n" + "Codigo Switch: " + this.codidoSwitch + "\n" +
+            "IBAN: " + this.iban + "\n" + "Codigo Switch: " + this.codidoSwitch + "\n" +
             "Fecha del alta de la cuenta: " + this.fchAltaCuenta + "\n" + "Fecha de la baja de la cuenta: " + this.fchBajaCuenta;
 
             return cuentaString;
