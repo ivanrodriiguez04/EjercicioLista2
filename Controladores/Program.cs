@@ -18,6 +18,7 @@ namespace EjercicioLista2
         {
             //Creamos los objetos necesarios
             ClienteDto nuevoCLiente = new ClienteDto();
+            CuentaDto nuevaCuenta = new CuentaDto();
             MenuInterfaz mi = new MenuImplementacion();
             ModificacionesListaInterfaz mL = new ModificacionesListaImplementacion();
             //variable que controla la entrada y salida del bucle while
@@ -48,6 +49,10 @@ namespace EjercicioLista2
                         break;
                     case 2:
                         mL.darAltaCuenta(listaCuenta);
+                        foreach (CuentaDto cuenta in listaCuenta) 
+                        {
+                           Console.WriteLine(cuenta.ToString());
+                        }
                         break;
                     default:
                         Console.WriteLine("[INFO] - La opcion seleccionada no coincide con ninguna.");

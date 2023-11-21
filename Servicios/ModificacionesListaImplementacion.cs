@@ -67,7 +67,16 @@ namespace EjercicioLista2.Servicios
             //Creamos el objeto cuenta
             CuentaDto nuevaCuenta = new CuentaDto();
             //Le pedimos al usuario toda la informacion necesaria
-
+            Console.WriteLine("Introduzca el dni del cliente:");
+            nuevaCuenta.DniCliente = Console.ReadLine();
+            Console.WriteLine("Introduzca el id de la cuenta:");
+            nuevaCuenta.IdCuenta= Convert.ToInt64(Console.ReadLine());
+            Console.WriteLine("Introduzca el IBAN:");
+            nuevaCuenta.Iban = Console.ReadLine();
+            Console.WriteLine("Introduzca la fecha del alta de la cuenta:");
+            nuevaCuenta.FchAltaCuenta = Console.ReadLine();
+            Console.WriteLine("Introduzca la fecha de la baja de la cuenta:");
+            nuevaCuenta.FchBajaCuenta = Console.ReadLine();
             return nuevaCuenta;
         }
     }
